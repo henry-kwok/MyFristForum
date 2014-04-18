@@ -1,4 +1,4 @@
-<%= link_to 'Forum4', controller: 'articles' %>
+<h1><%= link_to 'Forum4', controller: 'articles' %></h1>
 <% if user_signed_in? %>
 	logged in as <strong><%= current_user.email %></strong>
 	<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
